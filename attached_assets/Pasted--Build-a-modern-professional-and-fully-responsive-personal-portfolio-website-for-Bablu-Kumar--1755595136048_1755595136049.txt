@@ -1,0 +1,61 @@
+
+
+Build a modern, professional, and fully responsive personal portfolio website for **Bablu Kumar** using **React + Tailwind CSS + Framer Motion**, deployable on **Replit**. Structure the project as a future-ready full-stack app with clear separation of frontend and backend.
+
+### Requirements:
+
+**Folder Structure**  
+- `/client` → React + Tailwind CSS frontend (main focus)  
+- `/server` → Node.js + Express backend (optional, future-ready)  
+- `/config` → Centralized config files containing all dynamic content: personal info, projects, skills, experience, about section, social links, resume URL  
+
+**Hero Section**  
+- Display name: Bablu Kumar  
+- Title: Full-Stack Developer | Open Source Enthusiast  
+- Tagline: Focused on building scalable web apps and contributing to open source  
+- Profile picture placeholder  
+- Buttons: [Download Resume] and [Contact Me] with smooth hover effects  
+
+**About Section (Dynamic)**  
+- Load short intro (education details, CGPA, etc.) from config file with smooth fade-in animation  
+
+**Skills Section (Dynamic)**  
+- Load skill icons/badges and names from config  
+- Soft shadow/glow on hover  
+
+**Projects Section (Dynamic)**  
+- Load project data (name, description, live demo, GitHub links) from config  
+- Card hover animation: lift with shadow effect  
+- Buttons: [Live Demo] and [GitHub]  
+
+**Experience & Contributions (Dynamic)**  
+- Load work experience, certifications, open source contributions from config  
+- Example contribution: Fixed Zoomify gridSize calculation bug in OpenSeadragon to align with official Zoomify CLI behavior (PR #2772), improving image rendering for odd-sized images  
+
+**Contact Section**  
+- Load email, GitHub, LinkedIn, etc. from config  
+- Contact form via EmailJS  
+- Hover animations on social icons  
+
+**Footer**  
+- Minimal footer: © 2025 Bablu Kumar | Built with React & Tailwind CSS  
+- Optional quick links  
+
+### UI Quality & User Experience:  
+- Ensure a modern, clean, and professional UI design  
+- Fully responsive, mobile-first layout using Tailwind CSS  
+- Smooth fade-in, hover, and scroll animations with Framer Motion  
+- Interactive hover effects on buttons, skill badges, project cards, and social icons  
+- Dark/Light mode toggle for user preference  
+- Smooth scrolling for navigation links  
+- Accessibility and usability best practices  
+
+### Additional Features:  
+- SEO meta tags including title: "Bablu Kumar | Full-Stack Developer"  
+- No hardcoding; all content driven from config files for easy updates and scalability  
+- Easily extensible backend APIs and blog support in future  
+
+### Deployment:  
+- Ready to run and deploy on Replit with `/client` as main workspace  
+- Backend `/server` folder optional for future API or blog integration  
+
