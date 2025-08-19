@@ -9,7 +9,7 @@ interface UseScrollAnimationOptions {
 export const useScrollAnimation = (
   options: UseScrollAnimationOptions = {}
 ) => {
-  const elementRef = useRef<HTMLElement>(null);
+  const elementRef = useRef<HTMLDivElement>(null);
   const {
     threshold = 0.1,
     rootMargin = "0px 0px -50px 0px",

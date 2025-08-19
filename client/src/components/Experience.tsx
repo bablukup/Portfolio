@@ -10,7 +10,7 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-100 dark:bg-slate-800"
+      className="py-20 px-4 sm:px-6 lg:px-8 pl-16"
       data-testid="experience-section"
     >
       <div className="max-w-4xl mx-auto">
@@ -33,7 +33,7 @@ export default function Experience() {
           {experience.map((exp, index) => (
             <motion.div
               key={exp.id}
-              className="bg-white dark:bg-slate-700 rounded-xl p-6 shadow-lg"
+              className="card-enhanced rounded-xl p-8"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
@@ -70,7 +70,7 @@ export default function Experience() {
           {contributions.map((contribution, index) => (
             <motion.div
               key={contribution.id}
-              className="bg-white dark:bg-slate-700 rounded-xl p-6 shadow-lg"
+              className="card-enhanced rounded-xl p-8"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: (experience.length + index) * 0.2 }}
@@ -111,7 +111,7 @@ export default function Experience() {
 
           {/* Certifications */}
           <motion.div
-            className="bg-white dark:bg-slate-700 rounded-xl p-6 shadow-lg"
+            className="card-enhanced rounded-xl p-8"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: (experience.length + contributions.length) * 0.2 }}

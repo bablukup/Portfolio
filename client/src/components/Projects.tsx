@@ -23,7 +23,7 @@ export default function Projects() {
   };
 
   return (
-    <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8" data-testid="projects-section">
+    <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8 pl-16" data-testid="projects-section">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <motion.h2
@@ -43,7 +43,7 @@ export default function Projects() {
           {projects.map((project, index) => (
             <motion.div
               key={project.id}
-              className="project-card bg-white dark:bg-slate-700 rounded-xl overflow-hidden shadow-lg transition-all duration-300"
+              className="project-card card-enhanced rounded-xl overflow-hidden"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}

@@ -7,7 +7,7 @@ export default function About() {
   const animationRef = useScrollAnimation();
 
   return (
-    <section id="about" className="py-20 px-4 sm:px-6 lg:px-8" data-testid="about-section">
+    <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 pl-16" data-testid="about-section">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
           <motion.h2
@@ -30,15 +30,16 @@ export default function About() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
             data-testid="about-image"
+            className="card-enhanced rounded-xl p-6"
           >
             <img
               src="https://images.unsplash.com/photo-1498758536662-35b82cd15e29?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400"
               alt="Modern developer workspace"
-              className="rounded-xl shadow-lg w-full h-auto"
+              className="rounded-lg w-full h-auto"
             />
           </motion.div>
 
-          <div ref={animationRef} className="space-y-6" data-testid="about-content">
+          <div ref={animationRef} className="card-enhanced rounded-xl p-8 space-y-6" data-testid="about-content">
             <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
               {about.intro}
             </p>

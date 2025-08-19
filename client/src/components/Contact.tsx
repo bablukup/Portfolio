@@ -42,7 +42,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8" data-testid="contact-section">
+    <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 pl-16" data-testid="contact-section">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
           <motion.h2
@@ -64,7 +64,7 @@ export default function Contact() {
 
         <div ref={animationRef} className="grid md:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <div className="bg-white dark:bg-slate-700 rounded-xl p-8 shadow-lg" data-testid="contact-form-container">
+          <div className="card-enhanced rounded-xl p-8" data-testid="contact-form-container">
             <h3 className="text-xl font-semibold text-slate-800 dark:text-slate-200 mb-6">
               Send me a message
             </h3>
@@ -153,7 +153,7 @@ export default function Contact() {
 
           {/* Contact Info */}
           <div className="space-y-8">
-            <div className="bg-white dark:bg-slate-700 rounded-xl p-6 shadow-lg" data-testid="contact-info">
+            <div className="card-enhanced rounded-xl p-8" data-testid="contact-info">
               <h3 className="text-xl font-semibold text-slate-800 dark:text-slate-200 mb-6">
                 Contact Information
               </h3>
@@ -196,7 +196,7 @@ export default function Contact() {
             </div>
 
             {/* Social Links */}
-            <div className="bg-white dark:bg-slate-700 rounded-xl p-6 shadow-lg" data-testid="social-links">
+            <div className="card-enhanced rounded-xl p-8" data-testid="social-links">
               <h3 className="text-xl font-semibold text-slate-800 dark:text-slate-200 mb-6">
                 Connect With Me
               </h3>

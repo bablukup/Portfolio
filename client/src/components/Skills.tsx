@@ -33,7 +33,7 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-100 dark:bg-slate-800"
+      className="py-20 px-4 sm:px-6 lg:px-8 pl-16"
       data-testid="skills-section"
     >
       <div className="max-w-6xl mx-auto">
@@ -55,7 +55,7 @@ export default function Skills() {
           {skillCategories.map((category, categoryIndex) => (
             <motion.div
               key={category.title}
-              className="bg-white dark:bg-slate-700 rounded-xl p-6 shadow-lg"
+              className="card-enhanced rounded-xl p-8"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: categoryIndex * 0.2 }}
