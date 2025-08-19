@@ -1,0 +1,138 @@
+{
+  "personal": {
+    "name": "Bablu Kumar",
+    "title": "Full-Stack Developer | Open Source Enthusiast",
+    "tagline": "Focused on building scalable web applications and contributing to open source projects that make a difference.",
+    "email": "bablu.kumar@example.com",
+    "location": "India",
+    "resumeUrl": "/resume.pdf"
+  },
+  "about": {
+    "intro": "I'm a passionate Full-Stack Developer with a strong foundation in modern web technologies. Currently pursuing my Computer Science degree with a CGPA of 8.5, I combine academic excellence with hands-on experience in building scalable applications.",
+    "passion": "My passion lies in creating efficient, user-friendly applications and contributing to open source projects that solve real-world problems. I believe in writing clean, maintainable code and staying updated with the latest industry trends.",
+    "education": "Computer Science Student",
+    "cgpa": "CGPA: 8.5/10"
+  },
+  "skills": {
+    "frontend": [
+      { "name": "React", "icon": "fab fa-react", "color": "text-blue-500" },
+      { "name": "JavaScript", "icon": "fab fa-js-square", "color": "text-yellow-500" },
+      { "name": "HTML5", "icon": "fab fa-html5", "color": "text-orange-500" },
+      { "name": "CSS3", "icon": "fab fa-css3-alt", "color": "text-blue-600" },
+      { "name": "Tailwind", "icon": "fas fa-wind", "color": "text-teal-500" },
+      { "name": "Bootstrap", "icon": "fab fa-bootstrap", "color": "text-purple-600" }
+    ],
+    "backend": [
+      { "name": "Node.js", "icon": "fab fa-node-js", "color": "text-green-500" },
+      { "name": "Express", "icon": "fas fa-code", "color": "text-gray-600" },
+      { "name": "Python", "icon": "fab fa-python", "color": "text-blue-500" },
+      { "name": "MongoDB", "icon": "fas fa-database", "color": "text-orange-500" },
+      { "name": "PostgreSQL", "icon": "fas fa-database", "color": "text-blue-700" },
+      { "name": "Firebase", "icon": "fas fa-fire", "color": "text-yellow-500" }
+    ],
+    "tools": [
+      { "name": "Git", "icon": "fab fa-git-alt", "color": "text-orange-500" },
+      { "name": "GitHub", "icon": "fab fa-github", "color": "text-gray-800" },
+      { "name": "Docker", "icon": "fab fa-docker", "color": "text-blue-500" },
+      { "name": "AWS", "icon": "fab fa-aws", "color": "text-orange-600" },
+      { "name": "Vercel", "icon": "fas fa-code-branch", "color": "text-gray-600" },
+      { "name": "Linux", "icon": "fas fa-terminal", "color": "text-green-600" }
+    ]
+  },
+  "projects": [
+    {
+      "id": 1,
+      "name": "E-commerce Platform",
+      "description": "Full-stack e-commerce application with React frontend, Node.js backend, and MongoDB database. Features user authentication, payment integration, and admin dashboard.",
+      "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=200",
+      "technologies": ["React", "Node.js", "MongoDB"],
+      "liveUrl": "#",
+      "githubUrl": "#"
+    },
+    {
+      "id": 2,
+      "name": "Task Management App",
+      "description": "Collaborative task management application with real-time updates using Socket.io. Features drag-and-drop functionality, team collaboration, and progress tracking.",
+      "image": "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=200",
+      "technologies": ["React", "Socket.io", "Express"],
+      "liveUrl": "#",
+      "githubUrl": "#"
+    },
+    {
+      "id": 3,
+      "name": "Weather Dashboard",
+      "description": "Interactive weather dashboard with beautiful visualizations and forecasts. Integrates multiple weather APIs and provides location-based weather information.",
+      "image": "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=200",
+      "technologies": ["Vue.js", "Chart.js", "REST API"],
+      "liveUrl": "#",
+      "githubUrl": "#"
+    }
+  ],
+  "experience": [
+    {
+      "id": 1,
+      "title": "Junior Full-Stack Developer",
+      "company": "TechCorp Solutions",
+      "period": "Jan 2024 - Present",
+      "description": "Developing and maintaining web applications using React and Node.js. Collaborated with cross-functional teams to deliver high-quality software solutions. Improved application performance by 40% through code optimization.",
+      "technologies": ["React", "Node.js", "MongoDB"]
+    }
+  ],
+  "contributions": [
+    {
+      "id": 1,
+      "title": "OpenSeadragon Project",
+      "description": "Fixed Zoomify gridSize calculation bug to align with official Zoomify CLI behavior (PR #2772), improving image rendering for odd-sized images. This contribution enhanced the library's compatibility and reliability for thousands of users.",
+      "stats": {
+        "pr": "PR #2772 Merged",
+        "reactions": "15+ reactions",
+        "usage": "Used by 10k+ projects"
+      }
+    }
+  ],
+  "certifications": [
+    {
+      "name": "AWS Certified Developer Associate",
+      "year": "2024"
+    },
+    {
+      "name": "Google Cloud Platform Fundamentals",
+      "year": "2023"
+    },
+    {
+      "name": "Meta React Developer Professional Certificate",
+      "year": "2023"
+    }
+  ],
+  "contact": {
+    "email": "bablu.kumar@example.com",
+    "location": "India",
+    "responseTime": "Usually within 24 hours"
+  },
+  "socialLinks": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/bablukumar",
+      "icon": "fab fa-github",
+      "color": "bg-gray-800 hover:bg-gray-700"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://linkedin.com/in/bablukumar",
+      "icon": "fab fa-linkedin",
+      "color": "bg-blue-600 hover:bg-blue-500"
+    },
+    {
+      "name": "Twitter",
+      "url": "https://twitter.com/bablukumar",
+      "icon": "fab fa-twitter",
+      "color": "bg-blue-400 hover:bg-blue-300"
+    },
+    {
+      "name": "Email",
+      "url": "mailto:bablu.kumar@example.com",
+      "icon": "fas fa-envelope",
+      "color": "bg-red-500 hover:bg-red-400"
+    }
+  ]
+}
