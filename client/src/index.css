@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -36,13 +36,25 @@
   --sidebar-accent-foreground: hsl(205 90% 60%);
   --sidebar-border: hsl(210 20% 88%);
   --sidebar-ring: hsl(205 90% 60%);
-  --font-sans: 'Inter', sans-serif;
+  --font-sans: "Inter", sans-serif;
   --font-serif: Georgia, serif;
   --font-mono: Menlo, monospace;
   --radius: 1rem;
-  --hero-gradient: linear-gradient(135deg, hsl(205, 85%, 65%) 0%, hsl(220, 70%, 75%) 50%, hsl(240, 60%, 80%) 100%);
+  --hero-gradient: linear-gradient(
+    135deg,
+    hsl(205, 85%, 65%) 0%,
+    hsl(220, 70%, 75%) 50%,
+    hsl(240, 60%, 80%) 100%
+  );
   --skill-glow: 0 0 15px hsl(205 90% 60% / 0.3);
-  --mist-gradient: linear-gradient(135deg, hsl(210, 25%, 98%) 0%, hsl(205, 30%, 96%) 25%, hsl(215, 20%, 97%) 50%, hsl(200, 25%, 98%) 75%, hsl(210, 30%, 96%) 100%);
+  --mist-gradient: linear-gradient(
+    135deg,
+    hsl(210, 25%, 98%) 0%,
+    hsl(205, 30%, 96%) 25%,
+    hsl(215, 20%, 97%) 50%,
+    hsl(200, 25%, 98%) 75%,
+    hsl(210, 30%, 96%) 100%
+  );
   --scroll-line: hsl(205 90% 60%);
 }
 
@@ -79,13 +91,25 @@
   --sidebar-accent-foreground: hsl(205 90% 65%);
   --sidebar-border: hsl(220 12% 18%);
   --sidebar-ring: hsl(205 90% 65%);
-  --font-sans: 'Inter', sans-serif;
+  --font-sans: "Inter", sans-serif;
   --font-serif: Georgia, serif;
   --font-mono: Menlo, monospace;
   --radius: 1rem;
-  --hero-gradient: linear-gradient(135deg, hsl(220, 20%, 15%) 0%, hsl(215, 25%, 18%) 50%, hsl(210, 30%, 20%) 100%);
+  --hero-gradient: linear-gradient(
+    135deg,
+    hsl(220, 20%, 15%) 0%,
+    hsl(215, 25%, 18%) 50%,
+    hsl(210, 30%, 20%) 100%
+  );
   --skill-glow: 0 0 15px hsl(205 90% 65% / 0.3);
-  --mist-gradient: linear-gradient(135deg, hsl(220, 15%, 8%) 0%, hsl(215, 18%, 10%) 25%, hsl(210, 20%, 9%) 50%, hsl(205, 18%, 10%) 75%, hsl(220, 15%, 8%) 100%);
+  --mist-gradient: linear-gradient(
+    135deg,
+    hsl(220, 15%, 8%) 0%,
+    hsl(215, 18%, 10%) 25%,
+    hsl(210, 20%, 9%) 50%,
+    hsl(205, 18%, 10%) 75%,
+    hsl(220, 15%, 8%) 100%
+  );
   --scroll-line: hsl(205 90% 65%);
 }
 
@@ -106,15 +130,27 @@
   }
 
   body::before {
-    content: '';
+    content: "";
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle at 20% 20%, hsl(205 90% 60% / 0.02) 0%, transparent 50%),
-                radial-gradient(circle at 80% 80%, hsl(160 80% 55% / 0.02) 0%, transparent 50%),
-                radial-gradient(circle at 40% 60%, hsl(240 60% 80% / 0.01) 0%, transparent 50%);
+    background: radial-gradient(
+        circle at 20% 20%,
+        hsl(205 90% 60% / 0.02) 0%,
+        transparent 50%
+      ),
+      radial-gradient(
+        circle at 80% 80%,
+        hsl(160 80% 55% / 0.02) 0%,
+        transparent 50%
+      ),
+      radial-gradient(
+        circle at 40% 60%,
+        hsl(240 60% 80% / 0.01) 0%,
+        transparent 50%
+      );
     pointer-events: none;
     z-index: -1;
   }
@@ -124,55 +160,54 @@
   .hero-gradient {
     background: var(--hero-gradient);
   }
-  
+
   .skill-glow:hover {
     box-shadow: var(--skill-glow);
     transform: translateY(-2px);
   }
-  
+
   .project-card {
     backdrop-filter: blur(10px);
     transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -1px rgba(0, 0, 0, 0.06);
   }
-  
+
   .project-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+      0 10px 10px -5px rgba(0, 0, 0, 0.04);
   }
-  
+
   .dark .project-card:hover {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.25), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.25),
+      0 10px 10px -5px rgba(0, 0, 0, 0.1);
   }
 
   .card-enhanced {
     background: var(--card);
     backdrop-filter: blur(20px);
     border: 1px solid hsl(210 20% 88% / 0.5);
-    box-shadow: 0 4px 6px -1px hsl(210 25% 25% / 0.1), 
-                0 2px 4px -1px hsl(210 25% 25% / 0.06),
-                0 0 0 1px hsl(205 90% 60% / 0.05);
+    box-shadow: 0 4px 6px -1px hsl(210 25% 25% / 0.1),
+      0 2px 4px -1px hsl(210 25% 25% / 0.06), 0 0 0 1px hsl(205 90% 60% / 0.05);
     transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
 
   .dark .card-enhanced {
     border: 1px solid hsl(220 12% 18% / 0.8);
-    box-shadow: 0 4px 6px -1px hsl(220 15% 8% / 0.3), 
-                0 2px 4px -1px hsl(220 15% 8% / 0.2),
-                0 0 0 1px hsl(205 90% 65% / 0.1);
+    box-shadow: 0 4px 6px -1px hsl(220 15% 8% / 0.3),
+      0 2px 4px -1px hsl(220 15% 8% / 0.2), 0 0 0 1px hsl(205 90% 65% / 0.1);
   }
 
   .card-enhanced:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 15px -3px hsl(210 25% 25% / 0.1), 
-                0 4px 6px -2px hsl(210 25% 25% / 0.05),
-                0 0 0 1px hsl(205 90% 60% / 0.1);
+    box-shadow: 0 10px 15px -3px hsl(210 25% 25% / 0.1),
+      0 4px 6px -2px hsl(210 25% 25% / 0.05), 0 0 0 1px hsl(205 90% 60% / 0.1);
   }
 
   .dark .card-enhanced:hover {
-    box-shadow: 0 10px 15px -3px hsl(220 15% 8% / 0.4), 
-                0 4px 6px -2px hsl(220 15% 8% / 0.3),
-                0 0 0 1px hsl(205 90% 65% / 0.2);
+    box-shadow: 0 10px 15px -3px hsl(220 15% 8% / 0.4),
+      0 4px 6px -2px hsl(220 15% 8% / 0.3), 0 0 0 1px hsl(205 90% 65% / 0.2);
   }
 
   .scroll-progress-line {
@@ -181,31 +216,37 @@
     top: 0;
     width: 2px;
     height: 100vh;
-    background: linear-gradient(to bottom, 
-      hsl(210 20% 88% / 0.3) 0%, 
-      hsl(210 20% 88% / 0.1) 100%);
+    background: linear-gradient(
+      to bottom,
+      hsl(210 20% 88% / 0.3) 0%,
+      hsl(210 20% 88% / 0.1) 100%
+    );
     z-index: 40;
   }
 
   .scroll-progress-line::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: var(--scroll-progress, 0%);
-    background: linear-gradient(to bottom, 
-      var(--scroll-line) 0%, 
+    background: linear-gradient(
+      to bottom,
+      var(--scroll-line) 0%,
       hsl(160 80% 55%) 50%,
-      hsl(240 60% 80%) 100%);
+      hsl(240 60% 80%) 100%
+    );
     transition: height 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     box-shadow: 0 0 10px hsl(205 90% 60% / 0.4);
   }
 
   .dark .scroll-progress-line {
-    background: linear-gradient(to bottom, 
-      hsl(220 12% 18% / 0.6) 0%, 
-      hsl(220 12% 18% / 0.2) 100%);
+    background: linear-gradient(
+      to bottom,
+      hsl(220 12% 18% / 0.6) 0%,
+      hsl(220 12% 18% / 0.2) 100%
+    );
   }
 
   .dark .scroll-progress-line::before {
@@ -217,10 +258,15 @@
   .animate-float {
     animation: float 3s ease-in-out infinite;
   }
-  
+
   @keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
   }
 
   .glass-effect {
@@ -232,5 +278,34 @@
   .dark .glass-effect {
     background-color: hsl(220 12% 12% / 0.8);
     border: 1px solid hsl(220 12% 18% / 0.5);
+  }
+}
+@layer components {
+  /* ---------------- Hero Section Fixes ---------------- */
+  .hero-gradient {
+    background-color: var(
+      --card
+    ) !important; /* White background for hero only */
+    background-image: none !important; /* Remove any gradient */
+  }
+
+  .hero-gradient h1,
+  .hero-gradient h2,
+  .hero-gradient p {
+    color: var(--foreground) !important; /* Dark text for readability */
+  }
+
+  .hero-gradient h1 span.text-accent {
+    color: var(--accent) !important; /* Accent color for name */
+  }
+
+  .hero-gradient button.bg-transparent.border-white.text-white {
+    border-color: var(--primary) !important;
+    color: var(--primary) !important;
+  }
+
+  .hero-gradient button.bg-transparent.border-white.text-white:hover {
+    background-color: var(--primary) !important;
+    color: var(--primary-foreground) !important;
   }
 }

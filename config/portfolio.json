@@ -3,31 +3,51 @@
     "name": "Bablu Kumar",
     "title": "Full-Stack Developer | Open Source Enthusiast",
     "tagline": "Focused on building scalable web applications and contributing to open source projects that make a difference.",
-    "email": "bablu.kumar@example.com",
+    "email": "bk596572@gmail.com",
     "location": "India",
     "resumeUrl": "/resume.pdf"
   },
   "about": {
-    "intro": "I'm a passionate Full-Stack Developer with a strong foundation in modern web technologies. Currently pursuing my Computer Science degree with a CGPA of 8.5, I combine academic excellence with hands-on experience in building scalable applications.",
-    "passion": "My passion lies in creating efficient, user-friendly applications and contributing to open source projects that solve real-world problems. I believe in writing clean, maintainable code and staying updated with the latest industry trends.",
-    "education": "Computer Science Student",
-    "cgpa": "CGPA: 8.5/10"
+    "intro": "I'm Bablu Kumar, a dedicated Full-Stack Developer with a solid foundation in modern web technologies. Currently completing my BCA with a CGPA of 7.47,  I combine strong academic knowledge with hands-on experience in building scalable and user-friendly web applications.",
+    "passion": "I am passionate about crafting efficient, clean, and maintainable code. I enjoy building applications that solve real-world problems and contributing to open-source projects that make a meaningful impact.",
+    "education": "Bachelor of Computer Applications",
+    "cgpa": "CGPA: 7.47/10"
   },
   "skills": {
     "frontend": [
       { "name": "React", "icon": "fab fa-react", "color": "text-blue-500" },
-      { "name": "JavaScript", "icon": "fab fa-js-square", "color": "text-yellow-500" },
+      {
+        "name": "JavaScript",
+        "icon": "fab fa-js-square",
+        "color": "text-yellow-500"
+      },
       { "name": "HTML5", "icon": "fab fa-html5", "color": "text-orange-500" },
       { "name": "CSS3", "icon": "fab fa-css3-alt", "color": "text-blue-600" },
       { "name": "Tailwind", "icon": "fas fa-wind", "color": "text-teal-500" },
-      { "name": "Bootstrap", "icon": "fab fa-bootstrap", "color": "text-purple-600" }
+      {
+        "name": "Bootstrap",
+        "icon": "fab fa-bootstrap",
+        "color": "text-purple-600"
+      }
     ],
     "backend": [
-      { "name": "Node.js", "icon": "fab fa-node-js", "color": "text-green-500" },
+      {
+        "name": "Node.js",
+        "icon": "fab fa-node-js",
+        "color": "text-green-500"
+      },
       { "name": "Express", "icon": "fas fa-code", "color": "text-gray-600" },
       { "name": "Python", "icon": "fab fa-python", "color": "text-blue-500" },
-      { "name": "MongoDB", "icon": "fas fa-database", "color": "text-orange-500" },
-      { "name": "PostgreSQL", "icon": "fas fa-database", "color": "text-blue-700" },
+      {
+        "name": "MongoDB",
+        "icon": "fas fa-database",
+        "color": "text-orange-500"
+      },
+      {
+        "name": "PostgreSQL",
+        "icon": "fas fa-database",
+        "color": "text-blue-700"
+      },
       { "name": "Firebase", "icon": "fas fa-fire", "color": "text-yellow-500" }
     ],
     "tools": [
@@ -35,19 +55,23 @@
       { "name": "GitHub", "icon": "fab fa-github", "color": "text-gray-800" },
       { "name": "Docker", "icon": "fab fa-docker", "color": "text-blue-500" },
       { "name": "AWS", "icon": "fab fa-aws", "color": "text-orange-600" },
-      { "name": "Vercel", "icon": "fas fa-code-branch", "color": "text-gray-600" },
+      {
+        "name": "Vercel",
+        "icon": "fas fa-code-branch",
+        "color": "text-gray-600"
+      },
       { "name": "Linux", "icon": "fas fa-terminal", "color": "text-green-600" }
     ]
   },
   "projects": [
     {
       "id": 1,
-      "name": "E-commerce Platform",
-      "description": "Full-stack e-commerce application with React frontend, Node.js backend, and MongoDB database. Features user authentication, payment integration, and admin dashboard.",
+      "name": "RentMyRoam",
+      "description": "RentMyRoam is an Airbnb-inspired full-stack Node.js project that allows users to create, view, edit, and delete rental property listings with a clean, responsive UI using Bootstrap 5.",
       "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=200",
-      "technologies": ["React", "Node.js", "MongoDB"],
-      "liveUrl": "#",
-      "githubUrl": "#"
+      "technologies": ["EJS", "Node.js", "MongoDB"],
+      "liveUrl": "https://rentmyroam.onrender.com/",
+      "githubUrl": "https://github.com/bablukup/RentMyRoam"
     },
     {
       "id": 2,
@@ -92,8 +116,8 @@
   ],
   "certifications": [
     {
-      "name": "AWS Certified Developer Associate",
-      "year": "2024"
+      "name": "PostMan API",
+      "year": "2025"
     },
     {
       "name": "Google Cloud Platform Fundamentals",
@@ -105,32 +129,32 @@
     }
   ],
   "contact": {
-    "email": "bablu.kumar@example.com",
+    "email": "bk596572@gmail.com",
     "location": "India",
     "responseTime": "Usually within 24 hours"
   },
   "socialLinks": [
     {
       "name": "GitHub",
-      "url": "https://github.com/bablukumar",
+      "url": "https://github.com/bablukup",
       "icon": "fab fa-github",
       "color": "bg-gray-800 hover:bg-gray-700"
     },
     {
       "name": "LinkedIn",
-      "url": "https://linkedin.com/in/bablukumar",
+      "url": "https://linkedin.com/in/bablukup",
       "icon": "fab fa-linkedin",
       "color": "bg-blue-600 hover:bg-blue-500"
     },
     {
       "name": "Twitter",
-      "url": "https://twitter.com/bablukumar",
+      "url": "https://twitter.com/bablukup",
       "icon": "fab fa-twitter",
       "color": "bg-blue-400 hover:bg-blue-300"
     },
     {
       "name": "Email",
-      "url": "mailto:bablu.kumar@example.com",
+      "url": "bk596572@gmail.com",
       "icon": "fas fa-envelope",
       "color": "bg-red-500 hover:bg-red-400"
     }

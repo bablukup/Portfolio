@@ -7,10 +7,10 @@ export default function Hero() {
 
   const handleDownloadResume = () => {
     // Create a link element and trigger download
-    const link = document.createElement('a');
+    const link = document.createElement("a");
     link.href = personal.resumeUrl;
-    link.download = 'Bablu_Kumar_Resume.pdf';
-    link.target = '_blank';
+    link.download = "Bablu_Kumar_Resume.pdf";
+    link.target = "_blank";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -73,7 +73,7 @@ export default function Hero() {
           >
             <div className="animate-float">
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400"
+                src="https://i.ibb.co/p67KS3mS/IMG-20250403-202849-1.jpg"
                 alt="Bablu Kumar - Full Stack Developer"
                 className="w-80 h-80 rounded-full object-cover shadow-2xl border-4 border-white/20"
                 data-testid="profile-image"
