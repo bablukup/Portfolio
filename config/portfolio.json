@@ -116,16 +116,20 @@
   ],
   "certifications": [
     {
-      "name": "PostMan API",
+      "name": "Postman API Fundamentals Student Expert",
       "year": "2025"
     },
     {
-      "name": "Google Cloud Platform Fundamentals",
-      "year": "2023"
-    },
+      "name": "Full Stack Web Development (Apna College)",
+      "year": "2025"
+    }
+  ],
+  "education": [
     {
-      "name": "Meta React Developer Professional Certificate",
-      "year": "2023"
+      "degree": "Bachelor of Computer Applications (BCA)",
+      "institution": "Patna University, Patna, Bihar",
+      "year": "2021 – 2024",
+      "cgpa": "7.47 / 10"
     }
   ],
   "contact": {

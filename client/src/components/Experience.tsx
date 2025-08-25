@@ -52,7 +52,9 @@ export default function Experience() {
                   {exp.period}
                 </div>
               </div>
-              <p className="text-slate-600 dark:text-slate-300 mb-4">{exp.description}</p>
+              <p className="text-slate-600 dark:text-slate-300 mb-4">
+                {exp.description}
+              </p>
               <div className="flex flex-wrap gap-2">
                 {exp.technologies.map((tech) => (
                   <Badge
@@ -73,7 +75,10 @@ export default function Experience() {
               className="card-enhanced rounded-xl p-8"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: (experience.length + index) * 0.2 }}
+              transition={{
+                duration: 0.6,
+                delay: (experience.length + index) * 0.2,
+              }}
               viewport={{ once: true }}
               data-testid={`contribution-item-${contribution.id}`}
             >
@@ -88,7 +93,8 @@ export default function Experience() {
                     Open Source Contributor
                   </h3>
                   <p className="text-slate-600 dark:text-slate-300 mb-4">
-                    <strong>{contribution.title}:</strong> {contribution.description}
+                    <strong>{contribution.title}:</strong>{" "}
+                    {contribution.description}
                   </p>
                   <div className="flex items-center space-x-4 text-sm text-slate-500 dark:text-slate-400">
                     <span>
@@ -114,7 +120,10 @@ export default function Experience() {
             className="card-enhanced rounded-xl p-8"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: (experience.length + contributions.length) * 0.2 }}
+            transition={{
+              duration: 0.6,
+              delay: (experience.length + contributions.length) * 0.2,
+            }}
             viewport={{ once: true }}
             data-testid="certifications-section"
           >
@@ -130,13 +139,74 @@ export default function Experience() {
                 </h3>
                 <div className="space-y-3">
                   {certifications.map((cert, index) => (
-                    <div 
-                      key={index} 
+                    <div
+                      key={index}
                       className="flex justify-between items-center"
                       data-testid={`certification-${index}`}
                     >
-                      <span className="text-slate-600 dark:text-slate-300">{cert.name}</span>
-                      <span className="text-sm text-slate-500 dark:text-slate-400">{cert.year}</span>
+                      <span className="text-slate-600 dark:text-slate-300">
+                        {cert.name}
+                      </span>
+                      <span className="text-sm text-slate-500 dark:text-slate-400">
+                        {cert.year}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </motion.div>
+          {/* Education */}
+          <motion.div
+            className="card-enhanced rounded-xl p-8"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.6,
+              delay:
+                (experience.length +
+                  contributions.length +
+                  certifications.length) *
+                0.2,
+            }}
+            viewport={{ once: true }}
+            data-testid="education-section"
+          >
+            <div className="flex items-start space-x-4">
+              <div className="flex-shrink-0">
+                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                  <i className="fas fa-graduation-cap text-primary text-xl"></i>
+                </div>
+              </div>
+              <div className="flex-1">
+                <h3 className="text-xl font-semibold text-slate-800 dark:text-slate-200 mb-2">
+                  Education
+                </h3>
+                <div className="space-y-3">
+                  {portfolioConfig.education.map((edu, index) => (
+                    <div
+                      key={index}
+                      className="flex justify-between items-center"
+                      data-testid={`education-${index}`}
+                    >
+                      <div>
+                        <span className="text-slate-800 dark:text-slate-200 font-medium">
+                          {edu.degree}
+                        </span>
+                        <p className="text-slate-600 dark:text-slate-400 text-sm">
+                          {edu.institution}
+                        </p>
+                      </div>
+                      <div className="text-right">
+                        <span className="text-sm text-slate-500 dark:text-slate-400">
+                          {edu.year}
+                        </span>
+                        {edu.cgpa && (
+                          <p className="text-sm text-slate-500 dark:text-slate-400">
+                            {edu.cgpa}
+                          </p>
+                        )}
+                      </div>
                     </div>
                   ))}
                 </div>
