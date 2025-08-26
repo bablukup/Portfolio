@@ -27,22 +27,37 @@ export default function Contact() {
     message: "",
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     const result = await sendEmail(formData);
     if (result.success) {
       setFormData({ name: "", email: "", subject: "", message: "" });
     }
   };
 
+  // Add this function at the top of your component
+  const handleEmailClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    email: string
+  ) => {
+    e.preventDefault();
+    window.location.href = `mailto:${email.replace("mailto:", "")}`;
+  };
+
   return (
-    <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 pl-16" data-testid="contact-section">
+    <section
+      id="contact"
+      className="py-20 px-4 sm:px-6 lg:px-8 pl-16"
+      data-testid="contact-section"
+    >
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
           <motion.h2
@@ -57,20 +72,31 @@ export default function Contact() {
           </motion.h2>
           <div className="w-20 h-1 bg-primary mx-auto mb-6"></div>
           <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
-            I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology. 
-            Feel free to reach out!
+            I'm always open to discussing new opportunities, interesting
+            projects, or just having a chat about technology. Feel free to reach
+            out!
           </p>
         </div>
 
         <div ref={animationRef} className="grid md:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <div className="card-enhanced rounded-xl p-8" data-testid="contact-form-container">
+          <div
+            className="card-enhanced rounded-xl p-8"
+            data-testid="contact-form-container"
+          >
             <h3 className="text-xl font-semibold text-slate-800 dark:text-slate-200 mb-6">
               Send me a message
             </h3>
-            <form onSubmit={handleSubmit} className="space-y-6" data-testid="contact-form">
+            <form
+              onSubmit={handleSubmit}
+              className="space-y-6"
+              data-testid="contact-form"
+            >
               <div>
-                <Label htmlFor="name" className="block text-sm font-medium text-slate-600 dark:text-slate-300 mb-2">
+                <Label
+                  htmlFor="name"
+                  className="block text-sm font-medium text-slate-600 dark:text-slate-300 mb-2"
+                >
                   Full Name
                 </Label>
                 <Input
@@ -87,7 +113,10 @@ export default function Contact() {
               </div>
 
               <div>
-                <Label htmlFor="email" className="block text-sm font-medium text-slate-600 dark:text-slate-300 mb-2">
+                <Label
+                  htmlFor="email"
+                  className="block text-sm font-medium text-slate-600 dark:text-slate-300 mb-2"
+                >
                   Email Address
                 </Label>
                 <Input
@@ -104,7 +133,10 @@ export default function Contact() {
               </div>
 
               <div>
-                <Label htmlFor="subject" className="block text-sm font-medium text-slate-600 dark:text-slate-300 mb-2">
+                <Label
+                  htmlFor="subject"
+                  className="block text-sm font-medium text-slate-600 dark:text-slate-300 mb-2"
+                >
                   Subject
                 </Label>
                 <Input
@@ -121,7 +153,10 @@ export default function Contact() {
               </div>
 
               <div>
-                <Label htmlFor="message" className="block text-sm font-medium text-slate-600 dark:text-slate-300 mb-2">
+                <Label
+                  htmlFor="message"
+                  className="block text-sm font-medium text-slate-600 dark:text-slate-300 mb-2"
+                >
                   Message
                 </Label>
                 <Textarea
@@ -144,8 +179,12 @@ export default function Contact() {
                 data-testid="button-send-message"
               >
                 <span className="inline-flex items-center">
-                  <i className={`fas ${isSubmitting ? 'fa-spinner fa-spin' : 'fa-paper-plane'} mr-2`}></i>
-                  <span>{isSubmitting ? 'Sending...' : 'Send Message'}</span>
+                  <i
+                    className={`fas ${
+                      isSubmitting ? "fa-spinner fa-spin" : "fa-paper-plane"
+                    } mr-2`}
+                  ></i>
+                  <span>{isSubmitting ? "Sending..." : "Send Message"}</span>
                 </span>
               </Button>
             </form>
@@ -153,7 +192,10 @@ export default function Contact() {
 
           {/* Contact Info */}
           <div className="space-y-8">
-            <div className="card-enhanced rounded-xl p-8" data-testid="contact-info">
+            <div
+              className="card-enhanced rounded-xl p-8"
+              data-testid="contact-info"
+            >
               <h3 className="text-xl font-semibold text-slate-800 dark:text-slate-200 mb-6">
                 Contact Information
               </h3>
@@ -173,7 +215,10 @@ export default function Contact() {
                   </div>
                 </a>
 
-                <div className="flex items-center space-x-3 text-slate-600 dark:text-slate-300" data-testid="contact-location">
+                <div
+                  className="flex items-center space-x-3 text-slate-600 dark:text-slate-300"
+                  data-testid="contact-location"
+                >
                   <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center">
                     <i className="fas fa-map-marker-alt text-accent"></i>
                   </div>
@@ -183,7 +228,10 @@ export default function Contact() {
                   </div>
                 </div>
 
-                <div className="flex items-center space-x-3 text-slate-600 dark:text-slate-300" data-testid="contact-response-time">
+                <div
+                  className="flex items-center space-x-3 text-slate-600 dark:text-slate-300"
+                  data-testid="contact-response-time"
+                >
                   <div className="w-12 h-12 bg-orange-500/10 rounded-full flex items-center justify-center">
                     <i className="fas fa-clock text-orange-500"></i>
                   </div>
@@ -196,19 +244,26 @@ export default function Contact() {
             </div>
 
             {/* Social Links */}
-            <div className="card-enhanced rounded-xl p-8" data-testid="social-links">
+            <div
+              className="card-enhanced rounded-xl p-8"
+              data-testid="social-links"
+            >
               <h3 className="text-xl font-semibold text-slate-800 dark:text-slate-200 mb-6">
                 Connect With Me
               </h3>
-
               <div className="flex space-x-4">
                 {socialLinks.map((link) => (
                   <motion.a
                     key={link.name}
                     href={link.url}
+                    onClick={
+                      link.url.startsWith("mailto:")
+                        ? (e) => handleEmailClick(e, link.url)
+                        : undefined
+                    }
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`w-12 h-12 ${link.color} text-white rounded-full flex items-center justify-center transition-all duration-300`}
+                    className={`w-12 h-12 ${link.color} text-gray-800 dark:text-white rounded-full flex items-center justify-center transition-all duration-300`}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
                     data-testid={`social-link-${link.name.toLowerCase()}`}

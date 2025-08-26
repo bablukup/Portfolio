@@ -1,16 +1,18 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import portfolioConfig from "../../../config/portfolio.json";
+import { blob } from "stream/consumers";
 
 export default function Hero() {
   const { personal } = portfolioConfig;
 
-  const handleDownloadResume = () => {
+  const handleDownloadResume = async () => {
     // Create a link element and trigger download
+    const response = await fetch("/BABLU-KUMAR-Resume.pdf");
+    const blob = await response.blob();
     const link = document.createElement("a");
-    link.href = personal.resumeUrl;
-    link.download = "Bablu_Kumar_Resume.pdf";
-    link.target = "_blank";
+    link.href = window.URL.createObjectURL(blob);
+    link.download = "BABLU-KUMAR-Resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
