@@ -32,12 +32,6 @@ Preferred communication style: Simple, everyday language.
 - Wouter for routing
 - Light/Dark theme support with system detection
 
-### Backend
-- Node.js + Express.js with TypeScript
-- In-memory storage (future db integration ready)
-- PostgreSQL session store with connect-pg-simple
-- Vite-powered development server with hot reload
-
 ### Configuration & Database
 - Centralized JSON config for portfolio data
 - Shared TypeScript schemas & Zod validations
