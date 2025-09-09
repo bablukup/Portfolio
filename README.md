@@ -1,6 +1,3 @@
-
-
-```
 # 🌐 Portfolio Website – Bablu Kumar  
 
 ![Portfolio Preview](https://via.placeholder.com/1000x400?text=Portfolio+Preview)  
@@ -130,4 +127,3 @@ For any questions, collaborations, or opportunities:
 > Built with ❤️ and ☕ by Bablu Kumar
 
 ---
-```
