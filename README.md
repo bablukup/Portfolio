@@ -1,6 +1,5 @@
 # 🌐 Portfolio Website – Bablu Kumar
 
-![Portfolio Preview](https://via.placeholder.com/1000x400?text=Portfolio+Preview)
 
 [![Live Demo](https://img.shields.io/badge/🚀-Live%20Demo-blue)](#)  
 [![GitHub Repo](https://img.shields.io/badge/-Source%20Code-black?logo=github)](https://github.com/bablukup/Portfolio)  
